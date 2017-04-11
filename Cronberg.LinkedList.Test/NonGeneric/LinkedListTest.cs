@@ -10,7 +10,8 @@ namespace Cronberg.LinkedList.Test.NonGeneric
         [TestMethod]
         public void NonGenericTestInsert()
         {
-            Cronberg.LinkedList.Core.NonGeneric.LinkedList s = new Cronberg.LinkedList.Core.NonGeneric.LinkedList();
+            Cronberg.LinkedList.Core.NonGeneric.LinkedList s =
+                new Cronberg.LinkedList.Core.NonGeneric.LinkedList();
             Assert.IsTrue(s.Count() == 0);
 
             s.Insert("text 1");

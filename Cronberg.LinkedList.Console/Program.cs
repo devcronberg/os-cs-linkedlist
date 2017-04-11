@@ -11,22 +11,41 @@ namespace Cronberg.LinkedList.Console
     {
         static void Main(string[] args)
         {
-            Cronberg.LinkedList.Core.NonGeneric.LinkedList lst = 
-                new Core.NonGeneric.LinkedList();
-            lst.Insert("item 1");
-            lst.Insert("item 2");
+            {
+                Cronberg.LinkedList.Core.NonGeneric.LinkedList lst =
+                    new Core.NonGeneric.LinkedList();
+                lst.Insert("item 1");
+                lst.Insert("item 2");
 
-            WriteLine(lst.Count());
-            WriteLine(string.Join(", ", lst.Items()));
+                WriteLine(lst.Count());
+                WriteLine(string.Join(", ", lst.Items()));
 
-            var item = lst.Remove();
-            WriteLine(lst.Count());
-            WriteLine(string.Join(", ", lst.Items()));
+                var item = lst.Remove();
+                WriteLine(lst.Count());
+                WriteLine(string.Join(", ", lst.Items()));
 
-            item = lst.Remove();
-            WriteLine(lst.Count());
-            WriteLine(string.Join(", ", lst.Items()));
+                item = lst.Remove();
+                WriteLine(lst.Count());
+                WriteLine(string.Join(", ", lst.Items()));
+            }
 
+            {
+                Cronberg.LinkedList.Core.Generic.LinkedList<int> lst =
+                    new Core.Generic.LinkedList<int>();
+                lst.Insert(1);
+                lst.Insert(2);
+
+                WriteLine(lst.Count());
+                WriteLine(string.Join(", ", lst.Items()));
+
+                var item = lst.Remove();
+                WriteLine(lst.Count());
+                WriteLine(string.Join(", ", lst.Items()));
+
+                item = lst.Remove();
+                WriteLine(lst.Count());
+                WriteLine(string.Join(", ", lst.Items()));
+            }
         }
     }
 }
