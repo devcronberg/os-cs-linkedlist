@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Generic\LinkedList.cs" />
+    <Compile Include="Generic\LinkedListItem.cs" />
     <Compile Include="NonGeneric\LinkedList.cs" />
     <Compile Include="NonGeneric\LinkedListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

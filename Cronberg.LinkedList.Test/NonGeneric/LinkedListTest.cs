@@ -5,10 +5,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Cronberg.LinkedList.Test.NonGeneric
 {
     [TestClass]
-    public class LinkedListTest
+    public class LinkedListNonGenericTest
     {
         [TestMethod]
-        public void TestInsert()
+        public void NonGenericTestInsert()
         {
             Cronberg.LinkedList.Core.NonGeneric.LinkedList s = new Cronberg.LinkedList.Core.NonGeneric.LinkedList();
             Assert.IsTrue(s.Count() == 0);
@@ -27,7 +27,7 @@ namespace Cronberg.LinkedList.Test.NonGeneric
         }
 
         [TestMethod]
-        public void TestRemove()
+        public void NonGenericTestRemove()
         {
             Cronberg.LinkedList.Core.NonGeneric.LinkedList s = new Cronberg.LinkedList.Core.NonGeneric.LinkedList();
             s.Insert("text 1");
@@ -45,7 +45,7 @@ namespace Cronberg.LinkedList.Test.NonGeneric
         }
 
         [TestMethod]
-        public void TestItems()
+        public void NonGenericTestItems()
         {
             Cronberg.LinkedList.Core.NonGeneric.LinkedList s = new Cronberg.LinkedList.Core.NonGeneric.LinkedList();
             string res = string.Join(",", s.Items());
