@@ -40,8 +40,6 @@ namespace Cronberg.LinkedList.Test.NonGeneric
             Assert.IsTrue(s.Remove() == "text 3");
             Assert.IsTrue(s.Remove() == "text 2");
             Assert.IsTrue(s.Remove() == "text 1");
-            Assert.IsTrue(s.Remove() == null);
-            Assert.IsTrue(s.Remove() == null);
 
         }
 

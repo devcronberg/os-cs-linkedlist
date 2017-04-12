@@ -27,7 +27,7 @@ namespace Cronberg.LinkedList.Core.NonGeneric
         public string Remove()
         {
             if (this.head == null)
-                return null;
+                throw new ApplicationException("Empty list");
             else
             {
                 var node = head;
