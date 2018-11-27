@@ -13,11 +13,15 @@ Du har sikkert allerede kendskab til hægtede lister – enten gennem din uddann
 
 Har du ikke leget med hægtede lister er her en kort forklaring. En hægtet liste er en samling af objekter som består af data (i vores første eksempel blot en streng), samt en reference til det næste objekt. Objekterne kaldes typisk for ”noder”, og listen kan være så lang som der nu er plads i heap’en. Listen stopper automatisk når den sidste node’s reference til det næste objekt er null. Det smarte ved hægtede lister er, at det grundet brugen af referencer er hurtigt at tilføje og fjerne noder på listen, sortere, filtrere og så videre.
 
+![](billeder/pic0.png)
+
 I den virkelige verden vil man næppe kode sin egen liste-datastruktur. De findes jo i mange forskellige versioner under både System.Collection og især System.Collection.Generic, og denne opgave minder en del om en Stack – men her skal du altså kode den selv.
 
 ## En ikke generisk hægtet liste
 
 Start med at skabe en tom solution og kald den noget logisk som eksempelvis [efternavn].LinkedList. Tilføj nu et nyt projekt af typen klasse bibliotek, og kald det [efternavn].LinkedList.Core. Tilføj også et nyt projekt af typen Console, og kald det [efternavn].LinkedList.Console, og slutteligt et nyt projekt af typen Unit Test og kald det [efternavn].LinkedList.Test. Sørg for, at både Console- og Test-projektet har en reference til Core.
+
+![](billeder/pic1.png)
 
 I Core-projektet tilføjer du nu en mappe kaldet NonGeneric, og i denne to offentlige klasser:
 
@@ -34,6 +38,8 @@ Klassen LinkedList skal bestå af en privat egenskab kaldet Head af typen Linked
 - string Remove() : fjerner den sidste node, og returnerer dennes streng (svarer lidt til en Pop på en Stack)
 - int Count() : returnerer antallet af noder
 - List<string> Items: Returnerer en liste af strenge svarende til streng værdien i de enkelte noder
+
+![](billeder/pic2.png)
 
 Når du er færdig kan du teste klasserne med følgende kode i Console-projektet:
 
