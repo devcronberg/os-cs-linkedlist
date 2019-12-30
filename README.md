@@ -1,4 +1,4 @@
-# Opgaveservice C#: Hægtet liste
+# Opgave i C#: Hægtet liste
 
 Her er endnu en simpel C# opgave – denne gang med fokus på organisering af projekter, brug af referencer og lidt leg med generics.
 
