@@ -1,6 +1,6 @@
 # Opgaveservice C#: Hægtet liste
 
-Så blev det endnu engang tid til en simpel C# opgave – denne gang med fokus på organisering af projekter, brug af referencer og lidt leg med generics.
+Her er endnu en simpel C# opgave – denne gang med fokus på organisering af projekter, brug af referencer og lidt leg med generics.
 
 Opgaven er delt i to dele:
 
@@ -19,7 +19,7 @@ I den virkelige verden vil man næppe kode sin egen liste-datastruktur. De finde
 
 ## En ikke generisk hægtet liste
 
-Start med at skabe en tom solution og kald den noget logisk som eksempelvis [efternavn].LinkedList. Tilføj nu et nyt projekt af typen klasse bibliotek, og kald det [efternavn].LinkedList.Core. Tilføj også et nyt projekt af typen Console, og kald det [efternavn].LinkedList.Console, og slutteligt et nyt projekt af typen Unit Test og kald det [efternavn].LinkedList.Test. Sørg for, at både Console- og Test-projektet har en reference til Core.
+Start med at skabe en tom solution og kald den noget logisk som eksempelvis [efternavn].LinkedList. Tilføj nu et nyt projekt af typen klasse bibliotek (løsningen er ældre og baseret på .NET Framework, men du bør benytte .NET Standard), og kald det [efternavn].LinkedList.Core. Tilføj også et nyt projekt af typen Console, og kald det [efternavn].LinkedList.Console, og slutteligt et nyt projekt af typen Unit Test og kald det [efternavn].LinkedList.Test. Sørg for, at både Console- og Test-projektet har en reference til Core.
 
 ![](billeder/pic1.png)
 
@@ -134,4 +134,5 @@ WriteLine(string.Join(", ", lst.Items()));
 
 Prøv også med en ListedList< string > og LinkedList< DateTime > (mv). Du skal naturligvis skrive nye test til den generiske version. Hold nu fast hvor er generics en smart feature – eller? ;)
 
+Se mit forslag til løsning [her](https://github.com/devcronberg/os-cs-linkedlist), som dog er baseret på det gamle .NET Framework. Du kan blot benytte .NET Core/Standard.
 
